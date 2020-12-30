@@ -87,7 +87,11 @@ public class KeyValueStore {
             if (CRDHelper.isKeyExists(key, filePath)) {
                return Constants.FAILURE_KEY_ALREADY_AVAILABLE;
             }
-
+            if (!KeyValueCRDHelper.isValueSizeValid(value)) {
+                return Constants.FAILURE_VALUE_LENGTH_EXCEEDED;
+            }
+ 
+            
             Data data = new Data();
             data.setKey(key);
             if (timeToLive > 0) {
