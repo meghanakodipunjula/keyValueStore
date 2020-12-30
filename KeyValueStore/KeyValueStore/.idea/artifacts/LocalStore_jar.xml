@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="LocalStore:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LocalStore_jar</output-path>
+    <root id="root">
+      <element id="module-output" name="KeyValueStore" />
+      <element id="module-test-output" name="KeyValueStore" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/json/json/20201115/json-20201115.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
