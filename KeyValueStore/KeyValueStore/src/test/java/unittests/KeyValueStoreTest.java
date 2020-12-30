@@ -10,7 +10,7 @@ public class KeyValueStoreTest {
 
     //Replace your file name to test run
     KeyValueStore myDataStore = new KeyValueStore(
-            "/Users/nandinikodipunzula/Documents/proj");
+            "/Users/meghanakodipunzula/Documents/proj");
     @Test
     public void createDataTest() {
         JSONObject jsonObject = new JSONObject();
