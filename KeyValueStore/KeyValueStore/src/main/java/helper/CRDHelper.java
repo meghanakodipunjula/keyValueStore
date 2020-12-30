@@ -40,6 +40,13 @@ public class CRDHelper {
         }
         return false;
     }
+    public static boolean isValueSizeValid(JSONObject value) {
+        if (value.size() > Constants.MAX_VALUE_LENGTH) {
+            return false;
+        }
+        return true;
+    }
+    
 
     /**
      * To check if the given key is already available in DataStore or not
